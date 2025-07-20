@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Website for Images, Videos, and Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* Custom glowing red text */
+    .glow-red {
+      text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00;
+    }
+  </style>
+</head>
+
+<body class="bg-cover bg-center bg-fixed min-h-screen" style="background-image: url('https://i.imgur.com/sovCY2p.jpeg');">
+  <div class="container mx-auto p-6"></div>
+  <!--<div class="flex items-center justify-center h-full"> -->
+
+
+  <!-- Navigation Bar -->
+<nav class="flex justify-center space-x-3 text-sm mb-8">
+  <!-- Home -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      <a href="tailwind_prac_pt2.html" class="px-3 py-2">Home</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      About
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-about.html" class="px-3 py-2 hover:bg-gray-700">Who We Are</a>
+      <a href="practice-mission.html" class="px-3 py-2 hover:bg-gray-700">Mission</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Services
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-web-development.html" class="px-3 py-2 hover:bg-gray-700">Web Development</a>
+      <a href="practice-hosting.html" class="px-3 py-2 hover:bg-gray-700">Hosting</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Contact
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-contact.html" class="px-3 py-2 hover:bg-gray-700">Contact Us</a>
+      <a href="practice-visit.html" class="px-3 py-2 hover:bg-gray-700">Visit Us</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+   <div class="max-w-4xl mx-auto bg-black/70 p-8 rounded shadow-lg text-center">
+    <h1 class="text-5xl font-extrabold mb-6 glow-red text-center">We are the Web Sourcerers</h1>
+    <p class="text-2xl mb-6 glow-red text-center">
+      Email: webmasters@gmail.com
+    </p>
+    <p class="text-2xl mb-6 glow-red text-center">
+      Phone: 555-123-4567
+    </p>
+  </div>
+
+
+  <!-- Contact Form -->
+  <div class="mt-12">
+    <h2 class="text-2xl glow-red mb-4">Contact Us</h2>
+    <form action="https://formsubmit.co/ryan.williams84748@gmail.com" method="POST" enctype="multipart/form-data" class="space-y-4">
+      <input type="hidden" name="_next" value="practice-thank-you-message.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" placeholder="Your Name" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="phone" placeholder="Your Phone Number" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="email" placeholder="Email " class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <textarea placeholder="Your Message" class="w-full p-2 rounded bg-gray-800 text-white h-32" required></textarea>
+      
+      <!-- File Upload -->
+    <input type="file" name="attachment"
+           accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.rtf,.odt,.zip,.rar,.mp3,.wav,.m4a,.aac,.mp4,.mov,.avi"
+           class="w-full text-white bg-gray-800 file:bg-red-600 file:text-white file:rounded file:px-4 file:py-2 file:border-0 file:cursor-pointer" />
+      
+      <button type="SUBMIT!!!" class="px-4 py-2 bg-red-600 hover:bg-red-700 rounded text-white">Send Message</button>
+    </form>
+  </div>
+
+ <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-12">
+      © 2025 Masterful Web Sorcery. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
+<!-- Have phone number in corner of every single page. where if you click or tap on your phone it calls it. A text us option when it goes to 
+ text message if tapped. Basically different optimization for ios android.  Have an input box where you can take down name, email, phone, 
+ a box to say what you are requesting, time to contact (with selection menu), then have option to attach files (such as images, videos, documents, etc.).
+ , yes you can text me or not (yes or no), check if not a robot. Start a chat with a live representative. .Have a list of offices on right side-->
+ <!--Have a come visit us location on a google map-->
+
+
+
+ <!-- Step-by-Step: Run a Local Server in VS Code Using Live Server
+ 1. Open Your Project Folder in VS Code
+Launch Visual Studio Code
+
+Go to File > Open Folder
+
+Select the folder where your HTML file(s) are located
+
+2. Install the Live Server Extension
+In VS Code, click the Extensions icon on the left sidebar (or press Ctrl+Shift+X)
+
+In the search bar, type Live Server
+
+Click Install on the one by Ritwick Dey
+This adds the "Go Live" button to your status bar.
+
+3. Open Your HTML File
+Make sure your .html file is open and active in the editor
+
+4. Click “Go Live”
+Look at the bottom-right of VS Code and click "Go Live"
+
+This starts a local server (usually at http://127.0.0.1:5500 or similar)
+
+Your default browser should open automatically
+
+5. Edit and Auto-Reload
+As you save edits in VS Code, your browser auto-refreshes to show the changes
+
+This works for .html, .css, and .js files
+
+TURNING OFF LOCAL SERVER
+If You're Using Live Server in VS Code:
+Option 1: Click "Port: 5500" (or similar) in the status bar
+In the bottom-right corner of VS Code, click where it says Port: 5500 or Go Live
+
+This will stop the Live Server
+
+Option 2: Right-click the tab and select "Stop Live Server"
+If the page is still open, right-click in the editor
+
+Choose "Stop Live Server" from the menu-->
+ 

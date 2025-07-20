@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Website for Images, Videos, and Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* Custom glowing red text */
+    .glow-red {
+      text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00;
+    }
+  </style>
+</head>
+
+<body class="bg-cover bg-center bg-fixed min-h-screen" style="background-image: url('https://i.imgur.com/sovCY2p.jpeg');">
+  <div class="container mx-auto p-6"></div>
+  <!--<div class="flex items-center justify-center h-full"> -->
+
+
+  <!-- Navigation Bar -->
+<nav class="flex justify-center space-x-3 text-sm mb-8">
+  <!-- Home -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      <a href="tailwind_prac_pt2.html" class="px-3 py-2">Home</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      About
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-about.html" class="px-3 py-2 hover:bg-gray-700">Who We Are</a>
+      <a href="practice-mission.html" class="px-3 py-2 hover:bg-gray-700">Mission</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Services
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-web-development.html" class="px-3 py-2 hover:bg-gray-700">Web Development</a>
+      <a href="practice-hosting.html" class="px-3 py-2 hover:bg-gray-700">Hosting</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Contact
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-contact.html" class="px-3 py-2 hover:bg-gray-700">Contact Us</a>
+      <a href="practice-visit.html" class="px-3 py-2 hover:bg-gray-700">Visit Us</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--To create the iframe, type in address into google maps search bar, then click share, embed a map, copy html, then paste here-->
+<div class="space-y-12">
+  <div class="flex flex-wrap justify-center gap-x-6 gap-y-12">
+  <!-- Washington, DC -->
+    <div class="w-full md:w-[48%]">
+    <h2 class="text-2xl glow-red">Washington, DC</h2>
+    <p class="text-white mb-2">1600 Pennsylvania Ave NW, Washington, DC 20500</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1485512367153!2d-77.03912638820752!3d38.89771814656688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bce1127bff%3A0x227b259315fbe99a!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020500!5e0!3m2!1sen!2sus!4v1752279721818!5m2!1sen!2sus" 
+        width="100%" 
+        height="300" 
+        class="rounded"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  
+        <!-- Stockton, CA -->
+    <div class="w-full md:w-[48%]">
+    <h2 class="text-2xl glow-red">Stockton, CA</h2>
+    <p class="text-white mb-2">1240 W Robinhood Dr, Ste H</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.0727045878884!2d-121.32438438824204!3d37.99876459910824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900c456c34ffff%3A0x240b7a82ef721a3a!2s1240%20W%20Robinhood%20Dr%20Suite%20H%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1752280192465!5m2!1sen!2sus" 
+      width="100%" 
+      height="300" 
+      class="rounded"
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+
+  <!-- Chico, CA -->
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-12">
+      <div class="w-full md:w-[48%]">
+      <h2 class="text-2xl glow-red">Chico, CA</h2>
+      <p class="text-white mb-2">411 Main Street Chico, CA 95928</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.468635824358!2d-121.84023818817501!3d39.72912279708324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808327b7686ec535%3A0x9588eb65a50d1c75!2s411%20Main%20St%2C%20Chico%2C%20CA%2095928!5e0!3m2!1sen!2sus!4v1752280368259!5m2!1sen!2sus"
+        width="100%" 
+        height="300" 
+        class="rounded"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  <!-- Des Moines, IA -->
+    <div class="w-full md:w-[48%]">
+    <h2 class="text-2xl glow-red">Des Moines, IA</h2>
+    <p class="text-white mb-2">1007 E Grand Ave, Des Moines, IA 50319</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.98252986502!2d-93.60607908809965!3d41.59126068320432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee99b65c36bdeb%3A0xc43ca3ff07b08ced!2sIowa%20State%20Capitol%2C%20Iowa%20State%20Capitol%20-%20West%20Capitol%20Terrace%2C%201007%20E%20Grand%20Ave%2C%20Des%20Moines%2C%20IA%2050319!5e0!3m2!1sen!2sus!4v1752280501629!5m2!1sen!2sus" 
+      width="100%" 
+      height="300" 
+      class="rounded"
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+</div>
+
+  <!-- Contact Form -->
+  <div class="mt-12">
+    <h2 class="text-2xl glow-red mb-4">Contact Us</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="What's your name, little girl? What's your name? Shootin' you straight, little girl. Won't you dod the same? Skynard? Your Name" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="phone" placeholder="What's Phone Number? TTYL LMAO ROFL JK" class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <input type="email" placeholder="Your snail mai-, oh sorry, I mean what's your Email? " class="w-full p-2 rounded bg-gray-800 text-white" required />
+      <textarea placeholder="Say something or else..." class="w-full p-2 rounded bg-gray-800 text-white h-32" required></textarea>
+      
+      <!-- File Upload -->
+    <input type="file" name="attachment"
+           accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.rtf,.odt,.zip,.rar,.mp3,.wav,.m4a,.aac,.mp4,.mov,.avi"
+           class="w-full text-white bg-gray-800 file:bg-red-600 file:text-white file:rounded file:px-4 file:py-2 file:border-0 file:cursor-pointer" />
+      
+      <button type="SUBMIT!!!" class="px-4 py-2 bg-red-600 hover:bg-red-700 rounded text-white">Send Message</button>
+    </form>
+  </div>
+
+ <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-12">
+      © 2025 Masterful Web Sorcery. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+<!--For file uploads:  Documents (legal, business)
+.pdf – very common, universally supported
+.doc, .docx – Microsoft Word
+.odt – OpenDocument Text (LibreOffice)
+.txt – plain text
+.rtf – rich text format
+.xls, .xlsx – Excel spreadsheets (common for data/records)
+.ppt, .pptx – PowerPoint (sometimes for legal presentations)
+.zip, .rar – compressed file packages (bundled documents)
+Audio
+.mp3 – most compatible
+.wav – higher quality
+.m4a – common on iPhones
+.aac – widely supported compressed format
+Video
+.mp4 – most universal video format
+.mov – common for iPhone/macOS users
+.avi – older format, still in use
+Images
+.jpg, .jpeg, .png, .gif – standard image formats
+-->

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Website for Images, Videos, and Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* Custom glowing red text */
+    .glow-red {
+      text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00;
+    }
+  </style>
+</head>
+
+<body class="bg-cover bg-center bg-fixed min-h-screen" style="background-image: url('https://i.imgur.com/sovCY2p.jpeg');">
+  <div class="container mx-auto p-6"></div>
+  <!--<div class="flex items-center justify-center h-full"> -->
+
+
+  <!-- Navigation Bar -->
+<nav class="flex justify-center space-x-3 text-sm mb-8">
+  <!-- Home -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      <a href="tailwind_prac_pt2.html" class="px-3 py-2">Home</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      About
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-about.html" class="px-3 py-2 hover:bg-gray-700">Who We Are</a>
+      <a href="practice-mission.html" class="px-3 py-2 hover:bg-gray-700">Mission</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Services
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-web-development.html" class="px-3 py-2 hover:bg-gray-700">Web Development</a>
+      <a href="practice-hosting.html" class="px-3 py-2 hover:bg-gray-700">Hosting</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Contact
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-contact.html" class="px-3 py-2 hover:bg-gray-700">Contact Us</a>
+      <a href="practice-visit.html" class="px-3 py-2 hover:bg-gray-700">Visit Us</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div class="max-w-4xl mx-auto bg-black/70 p-8 rounded shadow-lg text-center">
+    <h1 class="text-5xl font-extrabold mb-6 glow-red text-center">We are the Web Sourcerers</h1>
+    <p class="text-2xl mb-6 glow-red text-center">
+      Welcome all Webbians. Hailing from the far away lost snowy mountain caps of Mount Webomulus, we bring you superior webbery.
+      You have fallen into our web, and it can only mean one thing — your webtelligence has brought you here.
+      You are now on the edge of webomniscience.
+    </p>
+    <p class="text-2xl mb-6 glow-red text-center">
+      The planets have aligned for your eyes to lay witness to the greatest website ever created. Do you not recognize the greatness of this website?
+      Look closer. What do you see? Still don't see it? When I said closer, I meant it. Still able to read this? Look closer. Witness greatness.
+    </p>
+    <p class="text-2xl mb-6 glow-red text-center">
+      Is your face touching the screen yet? If so, you are as close as you'll ever be to web greatness. Feel free to click around...
+      If not, you are not worthy of the websorcery of the Web Sourcerers.
+      Leave this page immediately and initiate sequence web banishment.<br />
+      <a href="https://example.com/banishment" class="text-yellow-400 underline hover:text-yellow-300 font-bold text-center">
+        ➤ CONFIRM WEBANISHMENT
+      </a>
+    </p>
+  </div>
+
+ <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-12">
+      © 2025 Masterful Web Sorcery. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

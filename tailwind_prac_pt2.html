@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Website for Images, Videos, and Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* Custom glowing red text */
+    .glow-red {
+      text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00;
+    }
+
+    /* Ripple keyframes (like rolling carpet) */
+    @keyframes textRipple {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-8px) rotate(-3deg);
+      }
+    }
+
+    .ripple-letter {
+      display: inline-block;
+      animation: textRipple 1.5s ease-in-out infinite;
+    }
+
+    /* Animation delays per letter */
+    .r0 { animation-delay: 0s; }
+    .r1 { animation-delay: 0.05s; }
+    .r2 { animation-delay: 0.1s; }
+    .r3 { animation-delay: 0.15s; }
+    .r4 { animation-delay: 0.2s; }
+    .r5 { animation-delay: 0.25s; }
+    .r6 { animation-delay: 0.3s; }
+    .r7 { animation-delay: 0.35s; }
+    .r8 { animation-delay: 0.4s; }
+    .r9 { animation-delay: 0.45s; }
+    .r10 { animation-delay: 0.5s; }
+    .r11 { animation-delay: 0.55s; }
+    .r12 { animation-delay: 0.6s; }
+    .r13 { animation-delay: 0.65s; }
+    .r14 { animation-delay: 0.7s; }
+    .r15 { animation-delay: 0.75s; }
+    .r16 { animation-delay: 0.8s; }
+    .r17 { animation-delay: 0.85s; }
+    .r18 { animation-delay: 0.9s; }
+    .r19 { animation-delay: 0.95s; }
+    .r20 { animation-delay: 1s; }
+  </style>
+</head>
+
+<body class="bg-cover bg-center bg-fixed min-h-screen" style="background-image: url('https://i.imgur.com/sovCY2p.jpeg');">
+  <div class="container mx-auto p-6"></div>
+  <!--<div class="flex items-center justify-center h-full"> -->
+
+
+<!--Animation header-->
+<h1 class="text-4xl md:text-5xl font-bold text-red-500 glow-red">
+    <!-- Ripple letters -->
+    <span class="ripple-letter r0">S</span>
+    <span class="ripple-letter r1">o</span>
+    <span class="ripple-letter r2">o</span>
+    <span class="ripple-letter r3">n</span>
+    <span class="ripple-letter r4"> </span>
+    <span class="ripple-letter r5">t</span>
+    <span class="ripple-letter r6">o</span>
+    <span class="ripple-letter r7"> </span>
+    <span class="ripple-letter r8">b</span>
+    <span class="ripple-letter r9">e</span>
+    <span class="ripple-letter r10"> </span>
+    <span class="ripple-letter r11">t</span>
+    <span class="ripple-letter r12">h</span>
+    <span class="ripple-letter r13">e</span>
+    <span class="ripple-letter r14"> </span>
+    <span class="ripple-letter r15">W</span>
+    <span class="ripple-letter r16">o</span>
+    <span class="ripple-letter r17">r</span>
+    <span class="ripple-letter r18">l</span>
+    <span class="ripple-letter r19">d</span>
+    <span class="ripple-letter r20">’</span>
+    <span class="ripple-letter r0">s</span>
+    <span class="ripple-letter r1"> </span>
+    <span class="ripple-letter r2">G</span>
+    <span class="ripple-letter r3">r</span>
+    <span class="ripple-letter r4">e</span>
+    <span class="ripple-letter r5">a</span>
+    <span class="ripple-letter r6">t</span>
+    <span class="ripple-letter r7">e</span>
+    <span class="ripple-letter r8">s</span>
+    <span class="ripple-letter r9">t</span>
+    <span class="ripple-letter r10"> </span>
+    <span class="ripple-letter r11">W</span>
+    <span class="ripple-letter r12">e</span>
+    <span class="ripple-letter r13">b</span>
+    <span class="ripple-letter r14">s</span>
+    <span class="ripple-letter r15">i</span>
+    <span class="ripple-letter r16">t</span>
+    <span class="ripple-letter r17">e</span>
+  </h1>
+
+
+ <!-- Navigation Bar -->
+  <!--Actually base this section on other websites and need to create real other pages that it links too.-->
+  
+  <!-- Navigation Bar -->
+<nav class="flex justify-center space-x-3 text-sm mb-8">
+  <!-- Home -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      <a href="tailwind_prac_pt2.html" class="px-3 py-2">Home</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      About
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-about.html" class="px-3 py-2 hover:bg-gray-700">Who We Are</a>
+      <a href="practice-mission.html" class="px-3 py-2 hover:bg-gray-700">Mission</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Services
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-web-development.html" class="px-3 py-2 hover:bg-gray-700">Web Development</a>
+      <a href="practice-hosting.html" class="px-3 py-2 hover:bg-gray-700">Hosting</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="relative group">
+    <div class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded-t cursor-pointer">
+      Contact
+    </div>
+    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 rounded-b shadow-md text-xs z-10 w-32 text-yellow-500">
+      <a href="practice-contact.html" class="px-3 py-2 hover:bg-gray-700">Contact Us</a>
+      <a href="practice-visit.html" class="px-3 py-2 hover:bg-gray-700">Visit Us</a>
+    </div>
+  </div>
+</nav>
+
+<!--Create a in website search button that takes you to key words upon the search-->
+
+<!--Create a resources page with useful links for people looking for website help-->
+
+<!--Basic way to add google search on web page-->
+    <!-- Search Form -->
+    <div class="flex justify-center mb-10">
+      <form action="https://www.google.com/search" method="GET" class="w-full max-w-md">
+        <div class="flex items-center border-b border-blue-500 py-2">
+          <input 
+            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" 
+            type="text" 
+            name="q" 
+            placeholder="Search Google..." 
+            aria-label="Search Google">
+          <button 
+            class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded" 
+            type="submit">
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Modal Trigger Button -->
+    <div class="text-center mb-10">
+      <button onclick="toggleModal()" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow">
+        Open Modal
+      </button>
+    </div>
+
+    <!-- Modal Component -->
+      <div id="modal" class="fixed inset-0 bg-gradient-to-r from-red-900 via-white/20 to-blue-900 bg-opacity-70 hidden 
+      justify-center items-center z-50"> 
+
+      <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md p-6 relative">
+        <h2 class="text-2xl font-bold mb-4">This is a Modal</h2>
+        <p class="text-gray-700 mb-4">Modals are great for user prompts, forms, or extra content without leaving the page.</p>
+        <button onclick="toggleModal()" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+          ✖
+        </button>
+      </div>
+    </div>
+
+    <!-- Links Section -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">Useful Links</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://tailwindcss.com" class="text-blue-600 hover:underline">Click Here for Ca$h Prize!</a></li>
+        <li><a href="https://developer.mozilla.org" class="text-blue-600 hover:underline">Click Here For a Chance to Win Big!!</a></li>
+        <li><a href="https://openai.com" class="text-blue-600 hover:underline">Click Here For the Opportunity of a LifeTime!!!</a></li>
+      </ul>
+    </section>
+
+    <!-- Images Section -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">Images</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="https://i.imgur.com/vUgQDxA.jpeg" alt="Swim with Porpoise" class="rounded shadow-md">
+        <img src="https://images.unsplash.com/photo-1585076800588-77e0884c3191?q=80&w=1386&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="George Washinton" class="rounded shadow-md">
+        <img src="https://i.imgur.com/COeIjg5.jpeg" alt="Cool like a pool" class="rounded shadow-md">
+      </div>
+    </section>
+
+
+
+
+    <!-- Video Section -->
+<section class="mb-10">
+  <h2 class="text-2xl font-semibold mb-4">Heaven's Edge Skin To Skin 1989</h2>
+  <div class="w-full max-w-3xl mx-auto relative">
+  <div class="flex flex-col md:flex-row items-start gap-6 w-full max-w-5xl mx-auto">
+    
+    <!-- Overlay GIF -->
+  <img src="practicegifs/fire-guitars.gif"
+       alt="Fire GIF"
+       class="w-48 h-auto rounded shadow-md">
+  <div class="relative w-full max-w-5xl mx-auto aspect-video rounded shadow-md overflow-hidden">
+  <div class="absolute inset-0 z-10 bg-black">
+    <img 
+      src="https://i.imgur.com/ScCw8NO.jpeg" 
+      alt="Poster" 
+      class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 group-hover:opacity-80"
+      onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';"
+    >
+  </div>
+  <div class="absolute inset-0 w-full h-full hidden">
+  <iframe 
+    src="https://player.vimeo.com/video/1099424616?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" 
+    class="w-full h-full"
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+    allowfullscreen 
+    title="heavens-edge-skin-to-skin">
+  </iframe>
+  </div>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Overlay GIF -->
+  <img src="practicegifs/fire-guitars.gif"
+       alt="Fire GIF"
+       class="w-48 h-auto rounded shadow-md">
+  </div>
+</section>
+
+<div class="mt-12 mb-6 flex justify-center space-x-4 text-gray-400 text-xs">
+  <a href="practice-legal-disclaimer.html" class="hover:underline">Legal Disclaimer</a>
+  <span>|</span>
+  <a href="practice-accessibility.html" class="hover:underline">Accessibility Statement</a>
+  <span>|</span>
+  <a href="practice-privacy-policy.html" class="hover:underline">Privacy Policy</a>
+</div>
+
+ <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-12">
+      © 2025 Masterful Web Sorcery. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Modal Toggle Script -->
+  <script>
+    function toggleModal() {
+      const modal = document.getElementById("modal");
+      modal.classList.toggle("hidden");
+      modal.classList.toggle("flex");
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+<!--Next see if you can put a gif in the website-->
+<!--See if can make cool animations like ceo@business.net-->
+<!--Add in links to other pages-->
+<!--Add in tabs that lead to link and tabs that have drop down menus-->
+<!--for the images, make another image that can be clicked on and has a bio of the thing in image, with a link that 
+takes you back to home page or other images that take you to other bio images-->
+<!--Add in a chatbot, and a place where you can communicate with an online agent-->
+<!--a button that redesigns entire website to several different languages.-->
+<!--Add in a spot where you can buy things-->
+<!--Create a search bar that specifically searches for articles that are on you articles on your website, then has up to 5 page buttons and a Next button
+Within the criteria for the search, it will first search for the keywords in the title, then it will search the keywords in the document itself. If nothing found
+then display No results found.-->
+<!--Subscribe to a newsletter by typing an email pressing a button, and sign up for texts.-->
+<!--ou are the [counter] visitor to this website! Congratulations!-->
+<!--In footer add links to say privacy policy, service areas, accesibility statement 
+(See what blind people need for websites, legal disclaimer 
+Another footer: team, FAQ, Blog, Contact; addresses, social media links, have a logo that links to important page)-->
+<!--see if you can create facebook, insta. twitter, linkedin, youtube page pages that you can attach a link to in bio that links to website-->
+<!--Put a phone number in upper right corner that you can call, use your number to see if works then leave genius number up there-->
+<!--Have a web awards section-->
+<!--Make a floating gif of something flying around that you have to catch-->
+<!--Add some cheap puzzles and computer games-->
+<!--Add somthing that can be click a certain number of times to level up and reach level one hundred with stats-->
+<!--Make website compatible for both computers, iphones, androids etc.-->
+<!--make a library website like on darklyrics.com-->
+<!--make and account on your website, continue with Google, Facebook, Apple, openpass, connect to appstore, get it on Googleplay-->
+<!--how to create  a website that takes data analytics on the users of the website, how long used a screen, clicked what etc.-->
+<!--How to put ads on a website-->
+<!--create password and email or phone number to reset password, security questions-->
+<!--Create a comments section and a blog page that filters out inappropriate content-->
+<!--Check out WebFX and see if you can do better.-->
+
+<!--For now it will be a demo version under the alais WebSourcers just for learning practice. 
+Create quasi social media accounts for all of these for practice-->
+
+<!--Plan call it Ryan E. Williams Web Services (Create quality websites and secure them for your local business!)-->
